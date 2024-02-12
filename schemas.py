@@ -1,11 +1,19 @@
 from typing import Union
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+    
+class TokenData(BaseModel):
+    username: Union[str, None] = None
 
 class TaskBase(BaseModel):
-    name: str
-    date: str
-    time: str
+    name: str 
+    date: str 
+    time: str 
     completed: bool = False
     
 class TaskCreate(TaskBase):
@@ -19,6 +27,7 @@ class Task(TaskBase):
         orm_mode = True
         
 class UserBase(BaseModel):
+    username: str
     email: str
 
 

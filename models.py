@@ -21,6 +21,7 @@ class Task(Base):
     name = Column(String, index = True)
     date = Column(String,index = True)
     time = Column(String, index = True)
+    
     completed = Column(Boolean, index =True, default = False)
     owner_id = Column(Integer, ForeignKey("users.id")) 
     
