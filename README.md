@@ -3,7 +3,8 @@ This is a FastAPI backend for a simple todo list (with user database and task da
 Todolists are very important for organizing our day and being productive. I myself create todo lists everyday and try to stick
 to them as much as possible to stay productive and have progress. Which served as a motivation for me to develop the system.
 
-How to run:
+How to run: \
+
   uvicorn main:app --reload
 
 Properties:
