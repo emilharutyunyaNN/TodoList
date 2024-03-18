@@ -7,7 +7,7 @@ How to run:
   uvicorn main:app --reload
 
 Properties:
-  --linked to a database (with sqlalchemy) of users and their tasks
+  --linked to a database (with sqlalchemy) of users and their tasks '\n'
   --users need to go through authentication process to be able to edit tasks in their account
   --tasks include (name, date, time, urgent, complete) attributes
   --system checks if tasks are expired or not periodically and sends notifications if they are expired
